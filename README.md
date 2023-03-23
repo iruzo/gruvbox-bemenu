@@ -20,7 +20,7 @@
 ## Usage
 
 - Launch from your wm, script or command bemenu adding the desired theme as params:
-```
+```sh
 # dark
 bemenu-run -i -l 20 --fb "#282828" --ff "#ebdbb2" --nb "#282828" --nf "#ebdbb2" --tb "#282828" --hb "#282828" --tf "#fb4934" --hf "#fabd2f" --nf "#ebdbb2" --af "#ebdbb2" --ab "#282828"
 # light
@@ -28,14 +28,13 @@ bemenu-run -i -l 20 --fb "#fbf1c7" --ff "#3c3836" --nb "#fbf1c7" --nf "#3c3836" 
 ```
 
 - Example for i3/sway config:
-```
-# mocha
+```sh
 set $menu bemenu-run -i -l 20 --fb "#282828" --ff "#ebdbb2" --nb "#282828" --nf "#ebdbb2" --tb "#282828" --hb "#282828" --tf "#fb4934" --hf "#fabd2f" --nf "#ebdbb2" --af "#ebdbb2" --ab "#282828"
 bindsym $mod+d exec $menu
 ```
 
 - You can also use an environment variale to set the theme.
-```
+```sh
 export BEMENU_OPTS='-i -l 20 --fb "#282828" --ff "#ebdbb2" --nb "#282828" --nf "#ebdbb2" --tb "#282828" --hb "#282828" --tf "#fb4934" --hf "#fabd2f" --nf "#ebdbb2" --af "#ebdbb2" --ab "#282828"'
 ```
 
